@@ -17,7 +17,7 @@ Usando:
 Este é um projeto rest de CRUD de Usuário, usando Spring Security com OAuth2. O endpoint para criar um novo usuário
 esta liberando para acesso:
 
-URL para criação de usuário (Tipo POST):
+URL para criação de usuário (Tipo POST):  
 http://localhost:8080/users
 
 JSON
