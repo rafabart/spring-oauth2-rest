@@ -1,0 +1,9 @@
+security:
+  oauth2:
+    client:
+      access-token-validity-seconds: 3600
+      authorized-grant-types: authorization_code,password,refresh_token,implicit
+      client-id: client-id
+      client-secret: secret-id
+      refresh-token-validity-seconds: 3600
+      scope: read,write,trust
