@@ -17,7 +17,7 @@ Usando:
 Este é um projeto rest de CRUD de Usuário, usando Spring Security com OAuth2. O endpoint para criar um novo usuário
 esta liberando para acesso:
 
-URL para criação de usuário:(Tipo POST)
+<p>URL para criação de usuário (Tipo POST):</p>
 http://localhost:8080/users
 
 JSON
@@ -28,10 +28,10 @@ JSON
 }
 ```
 
-Para fazer o login e receber um token de acesso, usar a URL:
+Para fazer o login e receber um token de acesso, usar a URL: 
 http://localhost:8080/oauth/token
 
-Usando POST:
+Usando POST: 
 Definir o corpo da requisição como "Form URL Encoded" e passar as variáveis com o seguintes valores:
 ```
 grant_type = password
@@ -39,7 +39,7 @@ username = admin
 password = admin
 ```
 
-Usando GET:
+Usando GET: 
 http://localhost:8080/oauth/token?grant_type=password&username=admin&password=admin
 
 E para ambos (POST ou GET) definir a autenticação como "Basic Auth" passando os valores:
@@ -48,7 +48,7 @@ username = client-id
 password = secret-id
 ```
 
-Será retornado uma estrutura JSON semelhante abaixo:
+Será retornado uma estrutura JSON semelhante abaixo:<p>
 ```
 {
   "access_token": "a7c3a1aa-5ec5-41d7-90b9-fdd60802c363",
@@ -59,10 +59,10 @@ Será retornado uma estrutura JSON semelhante abaixo:
 }
 ```
 
-O endpoint para listar todos os usuário necessita autorização por token(access_token fornecido acima) para a URL:
+O endpoint para listar todos os usuário necessita autorização por token(access_token fornecido acima) para a URL: 
 http://localhost:8080/users
 
-Deve-se definir a autenticação como "Bearer" passando os valores:
+Deve-se definir a autenticação como "Bearer" passando os valores: 
 ```
 token = (access_token)
 prefix = Bearer
