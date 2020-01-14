@@ -11,6 +11,7 @@ Usando:
 * Lombok
 * Devtools
 * Gradle
+* H2
  
  
 Este é um projeto rest de CRUD de Usuário, usando Spring Security com OAuth2. O endpoint para criar um novo usuário
